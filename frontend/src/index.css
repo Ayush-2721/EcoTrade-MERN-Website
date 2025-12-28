@@ -1,0 +1,63 @@
+/* Global responsive utilities and resets */
+:root{
+	--container-max: 1200px;
+	--gap-sm: 12px;
+	--gap-md: 20px;
+	--radius-sm: 8px;
+}
+
+html{font-size:16px;}
+@media (max-width:1200px){html{font-size:15px}}
+@media (max-width:900px){html{font-size:15px}}
+@media (max-width:600px){html{font-size:14px}}
+
+body{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+/* Fluid container used across pages */
+.container{max-width:var(--container-max);margin:0 auto;padding:0 16px;width:100%;box-sizing:border-box}
+
+/* Images & media */
+img,video,svg{max-width:100%;height:auto;display:block}
+
+/* Utility helpers */
+.hide-on-mobile{display:block}
+.show-on-mobile{display:none}
+@media (max-width:600px){
+	.hide-on-mobile{display:none}
+	.show-on-mobile{display:block}
+}
+
+/* Buttons responsive touch sizing */
+button, .MuiButton-root{min-height:36px;padding:6px 12px}
+@media (max-width:600px){button, .MuiButton-root{min-height:44px;padding:8px 12px}}
+
+/* Cards and papers: keep internal padding responsive */
+.card-padding{padding:20px}
+@media (max-width:900px){.card-padding{padding:14px}}
+@media (max-width:600px){.card-padding{padding:12px}}
+
+/* Forms & inputs full width on small screens */
+.form-row{display:flex;gap:12px}
+@media (max-width:720px){.form-row{flex-direction:column}}
+
+/* Small text helpers */
+.muted{color:#94A3B8}
+
+/* Prevent overly large fixed-width elements on small screens */
+*:not(textarea){max-width:100%;}
+
+/* Smooth scroll behavior for in-page nav */
+html { scroll-behavior: smooth; }
+
+/* Keyframes for subtle entry animations used by redesigned chat */
+@keyframes fadeUp { 0% { opacity: 0; transform: translateY(6px); } 100% { opacity: 1; transform: translateY(0); } }
+
+/* Small responsive tables: allow horizontal scroll on mobile */
+.table-responsive{overflow-x:auto}
+
+/* Accessibility: larger tap targets on mobile */
+@media (max-width:600px){
+	a,button, input, label { touch-action: manipulation; }
+}
+
+/* End of responsive utilities */

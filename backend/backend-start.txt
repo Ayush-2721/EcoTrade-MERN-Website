@@ -1,0 +1,58 @@
+﻿node.exe : npm verbose cli C:\Program Files\nodejs\node.exe C:\Program 
+Files\nodejs\node_modules\npm\bin\npm-cli.js
+At C:\Program Files\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm verbose cli...\bin\npm-cli.js:Str 
+   ing) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm info using npm@10.9.2
+npm info using node@v22.13.1
+npm verbose title npm run dev
+npm verbose argv "run" "dev"
+npm verbose logfile logs-max:10 
+dir:C:\Users\Ayush\AppData\Local\npm-cache\_logs\2025-12-21T14_03_37_911Z-
+npm verbose logfile 
+C:\Users\Ayush\AppData\Local\npm-cache\_logs\2025-12-21T14_03_37_911Z-debug-0.log
+
+> backend@1.0.0 dev
+> nodemon index.js
+
+[33m[nodemon] 3.0.2[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+(node:30060) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. 
+Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (D:\newproject\mern-ecommerce-main\backend\node_modules\expr
+ess\lib\application.js:635:24)
+    at Object.<anonymous> (D:\newproject\mern-ecommerce-main\backend\index.js:85:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) 
+{
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v22.13.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
