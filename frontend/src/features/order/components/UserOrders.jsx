@@ -306,7 +306,7 @@ export const UserOrders = () => {
 
                                                                     <Stack direction="row" justifyContent="space-between" alignItems="center" mt="auto">
                                                                         <Typography variant='h6' sx={{fontWeight: 700, color: '#667eea'}}>
-                                                                            ${product.product?.price}
+                                                                            ₹{product.product?.price}
                                                                         </Typography>
                                                                         <Stack direction="row" spacing={1}>
                                                                             <motion.div whileHover={{scale: 1.05}} whileTap={{scale: 0.95}}>

@@ -104,7 +104,7 @@ export const Navbar=({isProductList=false})=> {
     >
         <Toolbar sx={{p:1,height:"4rem",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
 
-          <Typography variant="h6" noWrap component="a" href="/" sx={{ fontWeight: 700, letterSpacing: '.3rem', color: 'inherit', textDecoration: 'none', fontSize: isMd ? '1rem' : '1.3rem' }}>
+          <Typography variant="h6" noWrap component="a" href="/" sx={{ fontWeight: 700, letterSpacing: '.2rem', color: 'inherit', textDecoration: 'none', fontSize: isMd ? '1rem' : '1.3rem' }}>
             ♻️ EcoTrade
           </Typography>
 

@@ -53,7 +53,7 @@ export const Footer = () => {
                         </motion.div>
                         <Stack>
                             <Typography variant="h6" sx={{fontWeight: 600, color: '#fff'}}>Free Shipping</Typography>
-                            <Typography variant="body2" sx={{color: '#bdc3c7'}}>On orders over $100</Typography>
+                            <Typography variant="body2" sx={{color: '#bdc3c7'}}>On orders over ₹60k</Typography>
                         </Stack>
                     </Stack>
                 </Grid>

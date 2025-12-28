@@ -14,7 +14,7 @@ export const FeatureCards = () => {
     {
       icon: LocalShippingIcon,
       title: 'FREE SHIPPING',
-      description: 'On all orders over €100. Fast delivery to your doorstep.',
+      description: 'On all orders over ₹60k. Fast delivery to your doorstep.',
     },
     {
       icon: SupportAgentIcon,
