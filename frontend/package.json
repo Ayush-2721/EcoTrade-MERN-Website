@@ -8,8 +8,6 @@
     "@mui/icons-material": "^5.14.19",
     "@mui/lab": "^5.0.0-alpha.155",
     "@mui/material": "^5.14.20",
-    "@react-three/drei": "^9.88.0",
-    "@react-three/fiber": "^9.4.2",
     "@reduxjs/toolkit": "^2.0.1",
     "@splinetool/react-spline": "^4.1.0",
     "@splinetool/runtime": "^1.12.28",
