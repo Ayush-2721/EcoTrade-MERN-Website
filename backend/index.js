@@ -110,6 +110,9 @@ global.io = io
 const attachChatSocket = require('./socket/chatSocket')
 attachChatSocket(io)
 
-server.listen(8000,()=>{
-    console.log('server [STARTED] ~ http://localhost:8000');
+const port=process.env.PORT || 8000;
+
+
+server.listen(port,()=>{
+    console.log('server [STARTED] on port '+port);
 })
