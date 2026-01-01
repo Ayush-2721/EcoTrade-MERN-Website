@@ -59,21 +59,34 @@ The frontend is responsible for:
 ## 📁 Frontend Folder Structure
 
 frontend/
-│
-├── public/
-│ └── index.html
-│
-├── src/
-│ ├── components/ → Reusable UI components
-│ ├── pages/ → Route-based pages
-│ ├── features/ → Redux slices (auth, cart, product, chat)
-│ ├── utils/ → Helper functions
-│ ├── theme/ → MUI theme configuration
-│ ├── App.jsx → Main routing file
-│ ├── main.jsx → App entry point
-│
-├── package.json  
 
+│
+
+├── public/
+
+│ └── index.html
+
+│
+
+├── src/
+
+│ ├── components/ → Reusable UI components
+
+│ ├── pages/ → Route-based pages
+
+│ ├── features/ → Redux slices (auth, cart, product, chat)
+
+│ ├── utils/ → Helper functions
+
+│ ├── theme/ → MUI theme configuration
+
+│ ├── App.jsx → Main routing file
+
+│ ├── main.jsx → App entry point
+
+│
+
+├── package.json  
 
 
 ---
@@ -121,20 +134,32 @@ Backend handles:
 ## 📁 Backend Folder Structure
 
 backend/
-│
-├── controllers/ → Business logic
-├── routes/ → API routes
-├── models/ → MongoDB schemas
-├── middleware/ → Auth & error handling
-├── database/ → DB connection
-├── socket/ → Socket.IO logic
-├── utils/ → Helper utilities
-├── uploads/ → Product images
-│
-├── index.js → Server entry
-├── package.json
-├── .env  
 
+│
+
+├── controllers/ → Business logic
+
+├── routes/ → API routes
+
+├── models/ → MongoDB schemas
+
+├── middleware/ → Auth & error handling
+
+├── database/ → DB connection
+
+├── socket/ → Socket.IO logic
+
+├── utils/ → Helper utilities
+
+├── uploads/ → Product images
+
+│
+
+├── index.js → Server entry
+
+├── package.json
+
+├── .env 
 
 
 ---
